@@ -66,7 +66,7 @@ INSERT INTO `utilisateur` (`id`, `active`, `password`, `token`, `username`, `emp
 (23, b'1', 'password', NULL, 'salle.commerciaux', NULL),
 (24, b'1', 'password', NULL, 'salle.prospecteurs', NULL);
 
-INSERT INTO `role_utilisateurs` (`roles_id`, `utilisateurs_id`) VALUES
+INSERT INTO `role_utilisateur` (`roles_id`, `utilisateurs_id`) VALUES
 (2, 17),
 (2, 18),
 (2, 19),
@@ -85,7 +85,6 @@ INSERT INTO `role_utilisateurs` (`roles_id`, `utilisateurs_id`) VALUES
 (3, 14),
 (3, 15),
 (3, 16),
-
 (4, 4),
 (4, 5),
 (4, 16),
