@@ -41,7 +41,7 @@ public class EmployeController {
             Utilisateur utilisateur = itEmployes.next();
             if (!"arnaud.deschaume".equals(utilisateur.getUsername())
                     && !"pierre.deruel".equals(utilisateur.getUsername())
-                    && !"pauline.moison".equals(utilisateur.getUsername())
+                    && !"pauline.moisson".equals(utilisateur.getUsername())
                     && !"sylvain.legrand".equals(utilisateur.getUsername())
                     && !"salle.commerciaux".equals(utilisateur.getUsername())
                     && !"salle.prospecteurs".equals(utilisateur.getUsername())) {
