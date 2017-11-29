@@ -112,7 +112,7 @@ public class Scheduler {
                     Objectif lastObjectif = null;
 
                     Objectif objectif = new Objectif();
-                    objectif.setMontant(20000);//lastObjectif.getMontant());
+                    objectif.setMontant(lastObjectif.getMontant());//lastObjectif.getMontant());
                     objectif.setPeriode(periode);
                     objectif.setEmploye(currentUtilisateur.getEmploye());
                     currentUtilisateur.getEmploye().getObjectifs().add(objectif);
