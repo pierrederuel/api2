@@ -10,5 +10,6 @@ public interface ObjectifService {
     public Objectif updateObjectif(Objectif objectif);
     public Objectif getObjectifById(Long id);
     public Objectif getLatestObjectifOfEmployeById(Employe employe);
+    public Objectif getLatestObjectifOfEmployeByIdAndPeriodeBeforeLast(Employe employe);
     public Iterable<Objectif> getObjectifs();
 }
