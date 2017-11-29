@@ -3,7 +3,7 @@ INSERT INTO `oauth_client_details` (`client_id`, `resource_ids`, `client_secret`
 ('eneliaAndroid', 'oauth2-resource', 'secret', 'read,write,trust', 'client_credentials,password,refresh_token', '', 'ROLE_CLIENT,ROLE_TRUSTED_CLIENT', 50000, 1500000, '{}', ''),
 ('eneliaIOS', 'oauth2-resource', 'secret', 'read,write,trust', 'client_credentials,password,refresh_token', '', 'ROLE_CLIENT,ROLE_TRUSTED_CLIENT', 50000, 1500000, '{}', '');
 
-INSERT INTO `periode` (`id`, `date_debut`, `date_fin`) VALUES
+INSERT INTO `periode` (`id`, `dateDebut`, `dateFin`) VALUES
 (1, 0xaced00057372000d6a6176612e74696d652e536572955d84ba1b2248b20c00007870770703000007e1090178, 0xaced00057372000d6a6176612e74696d652e536572955d84ba1b2248b20c00007870770703000007e1091e78);
 
 INSERT INTO `role` (`id`, `nom`) VALUES
