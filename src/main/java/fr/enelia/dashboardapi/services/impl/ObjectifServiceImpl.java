@@ -47,6 +47,15 @@ public class ObjectifServiceImpl implements ObjectifService {
         objectif.getPeriode().setObjectifs(null);
         return objectif;
     }
+    
+    @Override
+    public Objectif getLatestObjectifOfEmployeByIdAndPeriodeBeforeLast(Employe employe) {
+        LOGGER.info("getLatestObjectifOfEmployeByIdAndPeriodeBeforeLast");
+        Objectif objectif = objectifRepository.findObjectifByEmployeAndPeriode(employe, periodeService.getPeriodeBeforeLast());
+        objectif.setEmploye(null);
+        objectif.getPeriode().setObjectifs(null);
+        return objectif;
+    }    
 
     @Override
     public Iterable<Objectif> getObjectifs() {
