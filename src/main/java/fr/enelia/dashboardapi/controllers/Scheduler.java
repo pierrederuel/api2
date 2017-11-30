@@ -93,7 +93,7 @@ public class Scheduler {
 
 
 
-    //@Scheduled(cron="0 0 0 1 1/1 *") //Chaque 1er du mois à 00h01, on crée la nouvelle période
+    @Scheduled(cron="0 0 0 1 1/1 *") //Chaque 1er du mois à 00h01, on crée la nouvelle période
     @GetMapping(value = "init-new-periode")
     public void createNewPeriode() {
 
